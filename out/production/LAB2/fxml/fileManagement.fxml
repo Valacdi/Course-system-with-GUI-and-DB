@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="621.0" maxWidth="963.0" minHeight="621.0" minWidth="963.0" prefHeight="621.0" prefWidth="963.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxControl.AdminManagement">
+    <children>
+        <Button layoutX="891.0" layoutY="449.0" mnemonicParsing="false" onAction="#returnToLogin" prefHeight="25.0" prefWidth="58.0" text="Back" />
+        <Button layoutX="837.0" layoutY="519.0" mnemonicParsing="false" onAction="#addAdmin" prefHeight="25.0" prefWidth="90.0" text="Add" />
+        <Button layoutX="707.0" layoutY="332.0" minHeight="59.0" minWidth="151.0" mnemonicParsing="false" onAction="#deleteAdmin" text="Delete" />
+        <Button layoutX="707.0" layoutY="224.0" minHeight="59.0" minWidth="151.0" mnemonicParsing="false" onAction="#updateAdmin" text="Update" />
+        <Button layoutX="707.0" layoutY="119.0" minHeight="59.0" minWidth="151.0" mnemonicParsing="false" onAction="#selectAdmin" text="Select" />
+      <TreeView layoutX="14.0" layoutY="14.0" prefHeight="478.0" prefWidth="611.0" />
+    </children>
+</AnchorPane>
