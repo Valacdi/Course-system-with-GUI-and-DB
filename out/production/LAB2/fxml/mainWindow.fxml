@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="621.0" maxWidth="963.0" minHeight="621.0" minWidth="963.0" prefHeight="621.0" prefWidth="963.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxControl.MainWindow">
+   <children>
+      <TabPane prefHeight="621.0" prefWidth="963.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Available courses">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="542.0" prefWidth="942.0">
+                     <children>
+                        <Button layoutX="707.0" layoutY="183.0" mnemonicParsing="false" onAction="#checkInfo" prefHeight="59.0" prefWidth="151.0" text="Check course info" />
+                        <Button layoutX="707.0" layoutY="282.0" mnemonicParsing="false" onAction="#enrollToCourse" prefHeight="59.0" prefWidth="151.0" text="Enroll to course" />
+                        <ListView fx:id="listView" layoutX="14.0" layoutY="14.0" prefHeight="537.0" prefWidth="611.0" />
+                        <Button layoutX="891.0" layoutY="551.0" mnemonicParsing="false" onAction="#goToLogin" prefHeight="25.0" prefWidth="58.0" text="Back" />
+                        <Button layoutX="891.0" layoutY="513.0" mnemonicParsing="false" onAction="#refresh" prefHeight="25.0" prefWidth="58.0" text="Refresh" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="My courses">
+                <fx:include source="myCourses.fxml" />
+            </Tab>
+          <Tab fx:id="studentManagementTab" disable="true" text="Student management">
+              <fx:include source="studentManagement.fxml" />
+          </Tab>
+            <Tab fx:id="AdminManagementTab" disable="true" text="Admin management">
+                <fx:include source="adminManagement.fxml" />
+            </Tab>
+            <Tab fx:id="courseManagementTab" disable="true" text="Course management">
+                <fx:include source="courseManagement.fxml" />
+            </Tab>
+            <Tab fx:id="fileManagementTab" disable="true" text="File and folder management">
+                <fx:include source="fileManagement.fxml" />
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
